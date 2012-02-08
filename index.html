@@ -19,28 +19,46 @@
 	<!--[if lt IE 9]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 	
 	<div id="sitewrapper">
-		<header>
-			<div id="headerwrapper">
-				Logo
-			</div>
+	
+		<header id="headerwrapper" role="banner">
+		
+			<p>Logo</p>
+			<nav id="navwrapper" role="navigation">
+				<ul>
+					<li><a>Menu item 1</a></li>
+					<li><a>Menu item 2</a></li>
+					<li><a>Menu item 3</a></li>
+				</ul>
+			</nav>
+			
 		</header>
-		<div id="bodywrapper" role="main">
-			Content
+		
+		<div id="bodywrapper">
+		
+			<div id="maincontent" role="main">
+				<p>Content</p>
+			</div>
+			
+			<aside id="sidewrapper" role="complementary">
+				<p>Aside</p>
+			</div>
+			
 		</div>
+		
 	</div>
 	
 	<footer>
 		<div id="footerwrapper">
-			Footer
+			<p>Footer</p>
 		</div>
 	</footer>
 	
 	<div id="bg"><img id="bgimg"></div>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+	<script>window.jQuery || document.write('<script src="scripts/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
-	<script src="js/script.js"></script>
+	<script src="scripts/script.js"></script>
 
 	<script>
 		var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

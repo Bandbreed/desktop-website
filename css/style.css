@@ -339,10 +339,9 @@ form select {
 	background: #fff;
 	float: left;
 	margin: 0 0 20px;
-	padding: 20px 30px 15px;
-	width: 580px;
+	width: 560px;
 	}
-#sidebarwrapper {
+#sidewrapper {
 	float: right;
 	margin: 0 0 20px;
 	width: 300px;
@@ -386,7 +385,7 @@ nav {
 	background: #999;
 	float: left;
 	height: 35px; /* X-value */
-position: relative;
+	position: relative;
 	width: 960px;
 	z-index: 6666;
 	}
@@ -396,83 +395,13 @@ nav ul {
 nav li {
 	display: inline;
 	float: left;
-	position: relative;
 	}
-nav ul ul {
-	position: absolute;
-	top: 35px; /* X-value */
-left: 0;
-	display: none;
-	}
-nav ul ul li {
-	background: #666;
-	}
-nav ul ul li.omega {
-	
-	}
-nav li a:link,
-nav li a:visited {
+nav li a {
 	color: #fff;
-	float: left;
-	font: 15px/35px arial, sans-serif;
-	/* X-value */
-text-decoration: none;
-	padding: 0 20px;
-	}
-nav ul li.alpha a {
-	
-	}
-/*-- Hover effect for normal toplevel links --*/
-nav li a:hover {
-	color: #d20055;
+	cursor: pointer;
+	font: bold 15px/35px arial, sans-serif; /* X-value */
 	text-decoration: none;
-	}
-nav li a:active {
-	
-	}
-nav li a:focus {
-	
-	}
-/*-- Hover effect for active toplevel links --*/
-nav li.current_page_item a:link,
-nav li.current_page_item a:visited {
-	
-	}
-nav li.current_page_item a:hover {
-	
-	}
-nav li.current_page_item a:active {
-	
-	}
-/*-- Hover effect for normal subnav links --*/
-nav li ul li a:link,
-nav li ul li a:visited {
-	padding: 0 5px 0 30px;
-	}
-nav li ul li a:hover {
-	
-	}
-nav li ul li a:active {
-	
-	}
-nav ul li li.alpha a {
-	padding-top: 4px;
-	border-radius: 0;
-	-moz-border-radius: 0;
-	}
-nav ul li li.omega a {
-	padding-bottom: 4px;
-	}
-/*-- Hover effect for active subnav links --*/
-nav ul ul li.current_page_item a:link,
-nav ul ul li.current_page_item a:visited {
-	
-	}
-nav ul ul li.current_page_item a:hover {
-	
-	}
-nav ul ul li.current_page_item a:active {
-	
+	padding: 0 20px;
 	}
 /* @end */
 
@@ -481,7 +410,7 @@ nav ul ul li.current_page_item a:active {
 
 /* @group Footer */
 #footerwrapper {
-	background: #fff;
+	background: #ddd;
 	line-height: 70px; /* Footer height */
 	overflow: hidden;
 	}
