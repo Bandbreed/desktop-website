@@ -16,7 +16,9 @@ audio, canvas, video {
 	*display: inline;
 	*zoom: 1;
 	}
-audio:not([controls]),
+audio:not([controls]) {
+	display: none;
+	}
 [hidden] {
 	display: none;
 	}
@@ -100,7 +102,8 @@ header,
 h1, h2, h3, h4, h5, h6, p, a,
 blockquote, pre, abbr, acronym,
 address, big, cite, code, del, ins, samp,
-small, strike, strong, sub, sup, figcaption {
+small, strike, strong, sub, sup, figcaption,
+button, input, select, textarea {
 	-webkit-user-select: text;
 	-moz-user-select: text;
 	user-select: text;
@@ -164,7 +167,7 @@ sub {bottom: -0.25em;}
 figure {margin: 0;}
 	
 h1,h2,h3,h4,h5,h6 {
-	font: 32px/1.4 custom, sans-serif;
+	font: 16px/1.4 custom, sans-serif;
 	color: #222;
 	}
 h1 {font-size: 24px;}
@@ -173,7 +176,13 @@ h3 {font-size: 16px;}
 h4 {font-size: 16px;}
 h5 {font-size: 16px;}
 h6 {font-size: 16px;}
-h1,h2,h3,h4,h5,h6,p {margin: 0 0 15px;}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 15px 0 10px;
+	}
+p {
+	margin: 0 0 15px;
+	}
 /* @end */
 
 /* @group Links */
