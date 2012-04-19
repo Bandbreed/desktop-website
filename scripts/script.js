@@ -25,6 +25,26 @@
 //	Page initialisation and control	of screen													  //
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+var userAgent = navigator.userAgent.toLowerCase();
+ 
+// Figure out what browser is being used
+jQuery.browser = {
+	version: (userAgent.match( /.+(?:rv|it|ra|ie|me)[\/: ]([\d.]+)/ ) || [])[1],
+	chrome: /chrome/.test( userAgent ),
+	safari: /webkit/.test( userAgent ) && !/chrome/.test( userAgent ),
+	opera: /opera/.test( userAgent ),
+	msie: /msie/.test( userAgent ) && !/opera/.test( userAgent ),
+	mozilla: /mozilla/.test( userAgent ) && !/(compatible|webkit)/.test( userAgent )
+};
+
+if (/chrome/.test( userAgent ) || /webkit/.test( userAgent ) && !/chrome/.test( userAgent )) {
+	$('#html').show();
+} else  {
+	$('#flash').show();
+};
+
+
 //	Before page is loaded
 	$(document).on('pagebeforecreate',function() {
 	
@@ -43,6 +63,8 @@
 		//	Start features
 			//	Add classes to list items
 				geenAlphaOmega();
+				
+				
 		
 	});	//	////	End document ready
 

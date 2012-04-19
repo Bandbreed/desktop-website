@@ -4,65 +4,88 @@
 	<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
 	<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
 	
-<head>
-	<meta charset="utf-8">
-	<title></title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width">
-
-	<link rel="stylesheet" href="style.css">
-
-	<script src="scripts/libs/modernizr-2.5.2.min.js"></script>
-</head>
-
-<body>
-	<!--[if lt IE 9]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+	<head>
+		<!-- Meta information -->
+			<meta charset="utf-8">
+			<title>Title</title>
+			<meta name="description" content="Description">
+			<meta name="author" content="Arne Maier">
+			<meta name="viewport" content="width=device-width">
 	
-	<div id="sitewrapper">
-		<header id="headerwrapper" role="banner">
-		
-			<p>Logo</p>
-			<nav id="navwrapper" role="navigation">
-				<ul>
-					<li><a>Menu item 1</a></li>
-					<li><a>Menu item 2</a></li>
-					<li><a>Menu item 3</a></li>
-				</ul>
-			</nav>
+		<!-- Stylesheets -->
+			<link rel="stylesheet" href="style.css">
+	
+		<!-- Bringing old browsers up to date -->
+			<script src="scripts/libs/modernizr-2.5.2.min.js"></script>
 			
-		</header>
+	</head>
+	
+	<body>
+		<!--[if lt IE 9]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 		
-		<div id="bodywrapper">
-		
-			<div id="maincontent" role="main">
-				<p>Content</p>
-			</div>
+		<div id="sitewrapper">
+			<header id="headerwrapper" role="banner">
 			
-			<aside id="sidewrapper" role="complementary">
-				<p>Aside</p>
+				<div id="logowrapper">
+					<h1>Title</h1>
+				</div>
+				
+				<nav id="navwrapper" role="navigation">
+					<ul id="mainnav">
+						<li><a>Menu item 1</a></li>
+						<li><a>Menu item 2</a></li>
+						<li><a>Menu item 3</a></li>
+					</ul>
+				</nav>
+				
+			</header>
+			
+			<div id="bodywrapper">
+				<div id="maincontent" role="main">
+				
+						
+						<h3>Page Title</h3>
+						
+						<aside id="sidewrapper" role="complementary">
+							<p>Aside</p>
+						</aside>
+
+						<div id="html">Load HTML5 version</div>
+						<div id="flash">Load Flash version</div>
+						
+						<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</strong></p>
+						<p>Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+						<h4>Subtitle</h4>
+						<p>Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum. Ut dolor diam, elementum et vestibulum eu, porttitor vel elit.</p>
+						<h4>Subtitle</h4>
+						<p>Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id justo. Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi. Fusce vel volutpat elit. Nam sagittis nisi dui.</p>
+
+					
+				</div>
 			</div>
 			
 		</div>
 		
-	</div>
+		<footer>
+		
+			<div id="footerwrapper">
+				<p>Footer</p>
+			</div>
+			
+		</footer>
+		
+		<!-- Load jQuery and custom plugins/scripts -->
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+			<script>window.jQuery || document.write('<script src="scripts/libs/jquery-1.7.1.min.js"><\/script>')</script>
+			<script src="scripts/script.js"></script>
 	
-	<footer>
-		<div id="footerwrapper">
-			<p>Footer</p>
-		</div>
-	</footer>
-	
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="scripts/libs/jquery-1.7.1.min.js"><\/script>')</script>
-
-	<script src="scripts/script.js"></script>
-
-	<script>
-		var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-		s.parentNode.insertBefore(g,s)}(document,'script'));
-	</script>
-	
-</body>
+		<!-- Google Analytics code -->
+			<script>
+				var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+				(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+				g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+				s.parentNode.insertBefore(g,s)}(document,'script'));
+			</script>
+		
+	</body>
 </html>
